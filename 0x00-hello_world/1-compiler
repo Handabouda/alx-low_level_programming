@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Set the C file name
+CFILE="main.c"
+
+# Compile the C file without linking
+gcc -c $CFILE
+
+# Rename the output file
+mv main.o "${CFILE%.*}.o"

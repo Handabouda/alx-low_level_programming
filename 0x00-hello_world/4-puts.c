@@ -6,8 +6,8 @@
 
 /**
  * main - Entry point
- * 
- * printing string using puts
+ *
+ * prints a string
  * return: Always  0 (success)
  */
 

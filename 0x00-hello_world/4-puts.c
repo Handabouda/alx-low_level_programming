@@ -5,10 +5,10 @@
 #include <stdio.h>
 
 /**
- * The main function of the program
+ * main: entry point
  *
  * printing string using puts
- * return: 0 (executed successfully)
+ * return: 0 (success)
  */
 
 int main(void)

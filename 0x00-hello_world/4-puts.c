@@ -1,13 +1,13 @@
 /**
- * A simple C program that uses the `puts()` function to print a message to the console.
- * @file 4-puts.c
+ * simple C program that uses the puts function
+ * File: 4-puts.c
  */
 #include <stdio.h>
 /**
- * The main function of the program.
- * main void
+ * The main function of the program
+ *
  * printing string using puts
- * return 0 if the program executed successfully.
+ * return 0 (executed successfully)
  */
 int main(void)
 {	puts("\"Programming is like building a multilingual puzzle");

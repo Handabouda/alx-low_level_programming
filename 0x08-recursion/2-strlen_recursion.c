@@ -1,17 +1,15 @@
 #include "main.h"
-/** 
+/**
  * _strlen_recursion - the length of a string
  * @s: pointer to string
- * return: int
+ * Return: integer value
  */
 int _strlen_recursion(char *s)
 {
-	int i;
-	if (*s != '\0')
+	if (*s == '\0')
 	{
-		i++;
-		_strlen_recursion(*s + 1);
+		return (0);
 	}
-	_putchar(i);
+	else
+		return (1 + _strlen_recursion(s + 1));
 }
-

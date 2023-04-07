@@ -18,10 +18,9 @@ int isprime_help(int n, int i)
 
 /**
  * is_prime_number - number prime or not.
- * @n: number 
- * Return: 1 
+ * @n: number
+ * Return: 1
  **/
-
 int is_prime_number(int n)
 {
 	if (n <= 1)

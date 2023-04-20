@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int num1, num2, result;
 	int (*func)(int, int);
 	int arg1 = argc;
-	int arg2 = argv;
+	char *arg2 = argv;
 
 	if (arg1 != 4)
 	{

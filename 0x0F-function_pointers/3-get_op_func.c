@@ -1,5 +1,5 @@
 #include "3-calc.h"
-/*
+/**
  * get_op_func - select the right function
  * @s: pointer to operator
  * Return: integer
@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 	{
 		if (ops[i].op == s)
 		{
-			return (ops[i].f)
+			return (ops[i].f);
 		}
 		i++
 	}

@@ -6,6 +6,7 @@
  */
 int main(void)
 {
+	int num1, num2, resy
 	int a;
 	int b;
 	char *s;

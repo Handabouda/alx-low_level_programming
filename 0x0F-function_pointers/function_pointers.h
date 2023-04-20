@@ -1,6 +1,6 @@
 #include <stdio.h>
-#ifndef function_pointers_H
-#define function_pointers_H
+#ifndef FUNCTION_POINTERS_H
+#define fUNCTION_POINTERS_H
 #include <stddef.h>
 #include <string.h>
 int _putchar(char c);

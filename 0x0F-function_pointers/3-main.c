@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * main - check the code
- * @arg1: argument count
- * @arg2: argument vector
+ * @argc: argument count
+ * @argv: argument vector
  *
  * Return: Always 0
  */
@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 	}
 
 	func = (*get_op_func(argv[2]));
+
 	if (!func)
 	{
 		printf("Error\n");

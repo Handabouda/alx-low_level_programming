@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	int (*func)(int, int) = get_op_func();
+	int (*func)(int, int) = get_op_func(argv[2]);
 
 	if (argc != 4)
 	{

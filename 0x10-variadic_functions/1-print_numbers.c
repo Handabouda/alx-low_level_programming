@@ -8,11 +8,12 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
+	unsigned int;
 
 	va_start(args, n);
 	if (!separator)
 	{
-		for (int i = 0; i < n; i++)
+		for (i = 0; i < n; i++)
 		{
 			_putchar(va_arg(args, int);
 		}

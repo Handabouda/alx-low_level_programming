@@ -14,8 +14,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			_putchar(a_arg(args, int));
-			_putchar(separator);
+			_putchar(va_arg(args, int));
+			_putchar(*separator);
 		}
 	}
 	va_end(args);

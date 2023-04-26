@@ -15,9 +15,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		for (i = 0; i < n; i++)
 		{
 			_putchar(va_arg(args, int));
-			_putchar(*separator);
+			if ( i != n - 1 && separator != NULL)
+				_putchar(*separator);
 		}
 	}
 	va_end(args);
+	_putchar('\n');
 }
 

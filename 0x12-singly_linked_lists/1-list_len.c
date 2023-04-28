@@ -5,7 +5,7 @@
  * @h: pointer to head node of list
  * Return: number of nodes
  */
-size_t list_len(const list_t *h);
+size_t list_len(const list_t *h)
 {
 	size_t n = 0;
 

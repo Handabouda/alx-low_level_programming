@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * print_list - prints all the elements of a list_t (linked list)
+ * list_len - prints all the elements of a list_t (linked list)
  * @h: pointer to head first node
  * Return: number of nodes
  */
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h);
 {
 	size_t n = 1;
 

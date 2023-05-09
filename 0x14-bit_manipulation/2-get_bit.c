@@ -1,6 +1,5 @@
 #include "main.h"
 
-#include "main.h"
 /**
  * bin - prints the binary representation of a number
  * @n: the number to be converted
@@ -9,7 +8,7 @@
 int bin(unsigned long int n)
 {
 	if (n > 1)
-	print_binary(n >> 1);
+	bin(n >> 1);
 	return(putchar((n & 1) + '0'));
 }
 
@@ -32,4 +31,5 @@ int get_bit(unsigned long int n, unsigned int index)
 			return (str(n)[i]);
 		j++;
 	}
+	return (-1);
 }

@@ -21,15 +21,51 @@ int bin(unsigned long int n)
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int i;
-	unsigned long int j = 0;
-	const char *str = bin(n);
+	unsigned long int mask;
+	unsigned long int bit;
 
-	for (i = _strlen(str); i > 0; i--)
-	{
-		if (index == j)
-			return (str[i]);
-		j++;
-	}
-	return (-1);
+	if (index >= sizeof(unsigned long int) * 8)
+		return (-1);
+	mask = 1UL << index;
+	bit = n & mask;
+	return (bit != 0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

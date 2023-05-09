@@ -9,8 +9,9 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int i;
 	unsigned long int j = 0;
+	char str = print_binary(n);
 
-	for (i = _strlen(print_binary(n)); i > 0; i--)
+	for (i = _strlen(str); i > 0; i--)
 	{
 		if (index == j)
 			return (print_binary(n)[i]);

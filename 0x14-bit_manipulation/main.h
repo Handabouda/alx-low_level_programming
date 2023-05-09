@@ -5,6 +5,7 @@
 #include <math.h>
 
 int _strlen(const char *str);
+void putchar(char c);
 int power(int b, int ex);
 void print_binary(unsigned long int n);
 unsigned int binary_to_uint(const char *b);

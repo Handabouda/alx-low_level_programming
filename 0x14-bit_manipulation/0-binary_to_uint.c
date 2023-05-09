@@ -15,8 +15,10 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; i != '\0' ; i++)
 	{
-		if (b[i] == '0' || b[i] == '1')
-			sum = sum + b[i] * pow(2, i);
+		if (b[i] == '1')
+			sum = sum + 1 * pow(2, i);
+		if (b[i] == '0')
+			sum = sum + 0 * pow(2, i);
 		else
 		{
 			return (0);

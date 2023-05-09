@@ -3,7 +3,7 @@
 /**
  * bin - prints the binary representation of a number
  * @n: the number to be converted
- * Return: void
+ * Return: the binary
  */
 int bin(unsigned long int n)
 {
@@ -23,7 +23,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int i;
 	unsigned long int j = 0;
-	char str = bin(n);
+	char str[64] = bin(n);
 
 	for (i = _strlen(str); i > 0; i--)
 	{

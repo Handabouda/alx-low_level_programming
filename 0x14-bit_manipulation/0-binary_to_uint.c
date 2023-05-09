@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	for (i = 0; i != '\0' ; i++)
 	{
 		if (b[i] == '0' || b[i] == '1')
-			sum = sum + atoi(b[i]) * pow(2, i);
+			sum = sum + b[i] * pow(2, i);
 		else
 		{
 			return (0);

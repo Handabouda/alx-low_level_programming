@@ -9,7 +9,7 @@
 int power(int b, int ex)
 {
 	int i;
-	int r;
+	int r = 1;
 
 	if (ex == 0)
 	{

@@ -23,12 +23,12 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int i;
 	unsigned long int j = 0;
-	char str[64] = bin(n);
+	const char *str = bin(n);
 
 	for (i = _strlen(str); i > 0; i--)
 	{
 		if (index == j)
-			return (str(n)[i]);
+			return (str[i]);
 		j++;
 	}
 	return (-1);

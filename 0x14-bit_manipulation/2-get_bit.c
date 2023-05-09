@@ -8,10 +8,8 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int i;
-	int j = 0;
+	unsigned long int j = 0;
 
-	if (n == NULL)
-		return (-1);
 	for (i = _strlen(print_binary(n)); i > 0; i--)
 	{
 		if (index == j)

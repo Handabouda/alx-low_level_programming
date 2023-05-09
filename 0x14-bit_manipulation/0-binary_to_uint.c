@@ -37,15 +37,18 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	for (i = 0; i != '\0' ; i++)
+	else
 	{
-		if (b[i] == '1')
-			sum += 1 * power(2, i);
-		if (b[i] == '0')
-			sum += 0 * power(2, i);
-		else
+		for (i = 0; i != '\0' ; i++)
 		{
-			return (0);
+			if (b[i] == '1')
+				sum += 1 * power(2, i);
+			if (b[i] == '0')
+				sum += 0 * power(2, i);
+			else
+			{
+				return (0);
+			}
 		}
 	}
 	return (sum);

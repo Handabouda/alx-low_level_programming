@@ -1,17 +1,5 @@
 #include "main.h"
 
-/**
- * bin - prints the binary representation of a number
- * @n: the number to be converted
- * Return: the binary
- */
-int bin(unsigned long int n)
-{
-	if (n > 1)
-	bin(n >> 1);
-	return(putchar((n & 1) + '0'));
-}
-
 
 /**
  * get_bit - returns the value of a bit at a given index

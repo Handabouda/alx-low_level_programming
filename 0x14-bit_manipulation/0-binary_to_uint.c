@@ -1,5 +1,23 @@
 #include "main.h"
 
+
+/**
+ * _strlen - gets the length of a string
+ * @str: string input
+ * Return: string length
+ */
+int _strlen(const char *str)
+{
+	int i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
+
+
+
+
+
 /**
  * power - calculate the power
  * @b: base
@@ -23,6 +41,8 @@ int power(int b, int ex)
 	return (r);
 }
 
+
+
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: pointing to a string of 0 and 1 chars
@@ -39,7 +59,7 @@ unsigned int binary_to_uint(const char *b)
 
 	else
 	{
-		for (i = 0; b[i] != '\0' ; i++)
+		for (i = _strlen(b) - 1; i >= 0; i--)
 		{
 			if (b[i] == '1')
 				sum += 1 * power(2, i);

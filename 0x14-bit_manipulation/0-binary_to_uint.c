@@ -43,9 +43,9 @@ unsigned int binary_to_uint(const char *b)
 		{
 			if (b[i] == '1')
 				sum += 1 * power(2, i);
-			if (b[i] == '0')
+			else if (b[i] == '0')
 				sum += 0;
-			if (b[i] != '0' || b[i] != '1')
+			else
 			{
 				return (0);
 			}

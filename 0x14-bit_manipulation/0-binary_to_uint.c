@@ -8,22 +8,20 @@
  */
 int power(int b, int ex)
 {
-        int i;
-        int r;
+	int i;
+	int r;
 
-        if (ex == 0)
-        {
-                return (1);
-        }
-        else
-        {
-                for (i = 0; i < ex; i++)
-                        r = r * b;
-        }
-        return (r);
+	if (ex == 0)
+	{
+		return (1);
+	}
+	else
+	{
+		for (i = 0; i < ex; i++)
+			r = r * b;
+	}
+	return (r);
 }
-
-
 
 /**
  * binary_to_uint - converts a binary number to an unsigned int
@@ -42,9 +40,9 @@ unsigned int binary_to_uint(const char *b)
 	for (i = 0; i != '\0' ; i++)
 	{
 		if (b[i] == '1')
-			sum = sum + 1 * power(2, i);
+			sum += 1 * power(2, i);
 		if (b[i] == '0')
-			sum = sum + 0 * power(2, i);
+			sum += 0 * power(2, i);
 		else
 		{
 			return (0);
